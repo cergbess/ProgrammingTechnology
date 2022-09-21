@@ -17,15 +17,15 @@ namespace calculator
     }
     class LabRab
     {
-        static public bool SearchForOperators(char string)
+        static public bool SearchForOperators(char string1)
         {
-            if ("+-/*()=".IndexOf(string) != -1)
+            if ("+-/*()=".IndexOf(string1) != -1)
                 return true;
             return false;
         }
-        static public byte NameOperations(char string)
+        static public byte NameOperations(char string1)
         {
-            switch (string)
+            switch (string1)
             {
                 case '(': return 0;
                 case ')': return 1;
